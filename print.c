@@ -6,7 +6,7 @@
 /*   By: mjarry <mjarry@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 14:14:46 by mjarry            #+#    #+#             */
-/*   Updated: 2022/06/29 15:08:01 by mjarry           ###   ########.fr       */
+/*   Updated: 2022/06/30 11:57:07 by mjarry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	print_data(t_data *data)
 	free(str);
 	mlx_string_put(data->img.mlx, data->img.mlx_win, 0, 20, 0, "moves = ");
 	str = ft_itoa(data->moves);
-	mlx_string_put(data->img.mlx, data->img.mlx_win, 80, 20, 0, str);
+	mlx_string_put(data->img.mlx, data->img.mlx_win, 80, 20, 0XFF0022, str);
 	free(str);
 }
 
